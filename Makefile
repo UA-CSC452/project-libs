@@ -10,4 +10,5 @@ $(error Unsupported platform $(UNAME))
 endif
 
 install::
-	install -d $(PLATFORM)/* $(DEST)
+	mkdir -p $(DEST)
+	cp $(PLATFORM)/* $(DEST)
